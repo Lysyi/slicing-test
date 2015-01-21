@@ -7,8 +7,12 @@
 
 
 .header {
-  @extend %c-center;
+  // @include span(full);
   background-color: red;
+}
+
+main {
+  
 }
 
 
