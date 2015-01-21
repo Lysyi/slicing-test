@@ -1,4 +1,4 @@
-Meccabingo
+Test
 ----------
 
 ###Set up
