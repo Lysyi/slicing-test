@@ -1,0 +1,50 @@
+// *************************************
+// Helpers
+// *************************************
+
+@import 'settings';
+@import 'breakpoint';
+@import 'rgbapng';
+
+
+// Add smart breakpoint
+// --------------------
+// In case $fix-mqs is set to true we will ignore all breakpoints
+// except desktop - we will include its content
+@mixin add-breakpoint($breakpoint) {
+  @if $fix-mqs {
+    @if $breakpoint == $break-desktop or (index($breakpoint, $break-desktop) != false) {
+      @content
+    }
+  }
+  @else {
+    @include breakpoint($breakpoint) {
+      @content;
+    }
+  }
+}
+
+
+// Add rgba background
+// -------------------
+// We do not need a fallback for modern browsers - just for IE8
+// Also we have to include inline image because of the plugin bug with path
+@mixin add-rgba-background($color) {
+  @if $fix-mqs {
+    @include rgba-background-inline($color);
+  }
+  @else {
+    background: $color;
+  }
+}
+
+
+// Placeholder style
+// -----------------
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
+

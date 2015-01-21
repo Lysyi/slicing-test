@@ -1,0 +1,19 @@
+// *************************************
+// Header component
+// *************************************
+
+@import "../core/settings";
+@import "../core/helpers";
+
+
+.header {
+  @extend %c-center;
+  background-color: red;
+}
+
+
+// Tablet and up
+// -------------
+@include add-breakpoint($break-tablet-and-up) {
+  
+}

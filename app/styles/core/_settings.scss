@@ -1,0 +1,59 @@
+// *************************************
+// Settings
+// *************************************
+
+// Media query fix
+// ---------------
+$fix-mqs: false !default;
+
+
+// Susy settings
+// -------------
+$susy: (
+  columns: 16,
+  gutters: .07,
+);
+
+
+// Default backgrounds
+// -------------------
+$def-background: #fff;
+
+
+// Default colors
+// --------------
+$def-color: #000;
+
+
+// Default css rules
+// -----------------
+$def-font-family: Arial;
+$def-line-height: 1.4;
+
+
+// Font sizes
+// ----------
+$def-font-size: 12px;
+$big-font-size: 16px;
+$large-font-size: 20px;
+
+
+// Font-families
+// -------------
+
+
+// Breakpoints
+// -----------
+$screen-mobile-small: 500px;
+$screen-mobile: 725px;
+$screen-tablet: 960px;
+$break-mobile-small: max-width $screen-mobile-small;
+$break-mobile: (min-width $screen-mobile-small + 1) (max-width $screen-mobile);
+$break-tablet: (min-width $screen-mobile + 1) (max-width $screen-tablet);
+$break-desktop: min-width $screen-tablet + 1;
+$break-mobile-all: $break-mobile-small, $break-mobile;
+$break-mobile-and-up: $break-mobile, $break-tablet, $break-desktop;
+$break-tablet-and-up: $break-tablet, $break-desktop;
+$break-mobile-and-tablet: $break-mobile, $break-tablet;
+
+

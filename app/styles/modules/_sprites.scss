@@ -1,0 +1,7 @@
+// Import all shared sprites
+// -------------------------
+// Shared means that these sprites will be used across all pages
+
+@import "compass/utilities/sprites";
+@import "sprites/shared/*.png";
+@include all-shared-sprites(true);
