@@ -1,0 +1,45 @@
+// *************************************
+// Header menu
+// *************************************
+
+@import "../core/settings";
+@import "../core/helpers";
+
+.header-menu-container {
+  position: relative;
+  top: 55px;
+  .header-menu-ico {
+    @extend %l-pull-right;
+    @extend %l-v-align-mid;
+    @include border-radius(50px);
+    width: 70px;
+    height: 70px;
+    margin: 0 40px 0 0;
+    background-position: 50% 50%;
+    background-color: #999fa5;
+    i {
+      display: block;
+    }
+    @include add-breakpoint($break-tablet-and-up) {
+      // display: none;
+    } 
+  }
+}
+
+.header-menu { display:none;
+  position: absolute;
+  width: 100%;
+  top: 120px;
+  padding: 10px 0;
+  background-color: $light-blue;
+}
+
+.header-menu-item {
+  padding: 5px 0;
+  a {
+    padding: 0 40px;
+    color: $white-color;
+    font-size: $large-font-size;
+    text-decoration: none;
+  }
+}

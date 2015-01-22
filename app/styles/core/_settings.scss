@@ -10,8 +10,9 @@ $fix-mqs: false !default;
 // Susy settings
 // -------------
 $susy: (
-  columns: 12,
-  gutters: 1/4,
+  columns: 14,
+  gutters: 1,
+  debug: (image: show)
 );
 
 
@@ -23,6 +24,16 @@ $def-background: #fff;
 // Default colors
 // --------------
 $def-color: #000;
+
+$black-color: #000000;
+$white-color: #ffffff;
+
+$light-gray: #f3f3f3;
+$normal-gray: #c3c3c3;
+$dark-gray: #484848;
+
+$light-blue: #3aafdc;
+$normal-blue: #3a88dc;
 
 
 // Default css rules

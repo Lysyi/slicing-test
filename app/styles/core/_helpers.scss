@@ -48,3 +48,21 @@
   &:-ms-input-placeholder      {@content}
 }
 
+
+// Arrow
+// -----------------
+%arrow {
+  position: absolute;
+  &:after {
+    content: ' ';
+    width: 0; 
+    height: 0; 
+    position: absolute;
+    display: block;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent; 
+    border-right: 10px solid $def-color;
+    top: 18px;
+    left: 18px;
+  }
+}
