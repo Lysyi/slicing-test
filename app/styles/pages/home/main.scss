@@ -14,9 +14,17 @@
 @import '../../core/base';
 @import '../../core/layout';
 
+// // Partials
+// // --------------
+@import '../../partials/jquery.bxslider';
+
 
 // // Import modules
 // // --------------
 @import '../../modules/sprites';
 @import '../../modules/header';
+@import '../../modules/slider';
 @import '../../modules/footer';
+
+
+@import '../../partials/jquery.bxslider';

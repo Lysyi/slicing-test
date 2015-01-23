@@ -48,10 +48,10 @@ module.exports = function (grunt) {
         files: ['bower.json'],
         tasks: ['bowerInstall']
       },
-      js: {
-        files: ['<%= config.app %>/scripts/**/*.js'],
-        tasks: ['jshint']
-      },
+      // js: {
+      //   files: ['<%= config.app %>/scripts/**/*.js'],
+      //   tasks: ['jshint']
+      // },
       compass: {
         files: ['<%= config.app %>/styles/**/*.{scss,sass}'],
         tasks: ['compass:server']
@@ -118,17 +118,17 @@ module.exports = function (grunt) {
     },
 
     // Make sure code styles are up to par and there are no obvious mistakes
-    jshint: {
-      options: {
-        jshintrc: '.jshintrc',
-        reporter: require('jshint-stylish')
-      },
-      all: [
-        'Gruntfile.js',
-        '<%= config.app %>/scripts/**/*.js',
-        '!<%= config.app %>/scripts/vendor/*'
-      ]
-    },
+    // jshint: {
+    //   options: {
+    //     jshintrc: '.jshintrc',
+    //     reporter: require('jshint-stylish')
+    //   },
+    //   all: [
+    //     'Gruntfile.js',
+    //     '<%= config.app %>/scripts/**/*.js',
+    //     '!<%= config.app %>/scripts/vendor/*'
+    //   ]
+    // },
 
     compass: {
       dist: {
@@ -319,7 +319,7 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('build', [
-    'newer:jshint',
+    // 'newer:jshint',
     'clean:dist',
     'useminPrepare',
     'concurrent:dist',

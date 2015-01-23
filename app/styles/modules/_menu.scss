@@ -2,9 +2,6 @@
 // Header menu
 // *************************************
 
-@import "../core/settings";
-@import "../core/helpers";
-
 .header-menu-ico {
   @extend %l-pull-right;
   @extend %l-v-align-mid;
@@ -25,6 +22,7 @@
   @include breakpoint($break-mobile-small) {
     @include arrow-top(-24px, 80%, 25px, #3aafdc);
   }
+  z-index: 999;
   position: absolute;
   width: 100%;
   top: 180px;
