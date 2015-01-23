@@ -46,11 +46,9 @@
 
 .header-menu-inner-block {
   @include background-image(linear-gradient(#e1e1e1, #fafafa 5%, #fafafa 95%, #fafafa));
+  display: none;
   padding: 15px 0;
   background-color: #fafafa;
-  // @include breakpoint($break-mobile-and-up) {
-  //   display: none;
-  // }
 }
 
 .heder-menu-inner {
