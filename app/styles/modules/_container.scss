@@ -97,6 +97,10 @@ button {
   }
 }
 
+.baner-container {
+  display: none;
+}
+
 // Tablet and up
 // -------------
 @include breakpoint($break-mobile-and-up) {
@@ -120,11 +124,7 @@ button {
 
   .feature-list-container {
     @include span(8 of 12);
-  }
-
-  .news-list-container {
-    @include span(4 of 12);
-    padding: 0 0 0 20px;
+    margin: 0 0 20px 0;
   }
 
   .feature-list-item {
@@ -145,7 +145,13 @@ button {
       color: $normal-blue;
     }
   }
-
+  
+  .news-list-container {
+    @include span(4 of 12);
+    margin: 0 0 20px 0;
+    padding: 0 0 0 20px;
+  }
+  
   .news-list {
     padding-top: 5px;
   }
@@ -166,4 +172,15 @@ button {
     }
   }
 
+  .baner-container {
+    clear: both;
+    display: block;
+    padding: 20px 0 20px 0;
+    border-top: dotted #8f8b84 1px;
+    .baner-block {
+      height: 140px;
+      background-color: #f3f3f3;
+    }
+  }
+ 
 }
