@@ -55,11 +55,6 @@
   display: none;
 }
 
-.container {
-  clear: both;
-  background-color: red;
-}
-
 .break-tablet {
   display: none;
   position: absolute;
@@ -87,7 +82,7 @@
 // -------------
 @include breakpoint($break-mobile-and-up) {
   .header {
-    max-width: 940px;
+    max-width: 980px;
     height: 77px;
     margin: 0 auto;
     padding: 0 40px;

@@ -1,0 +1,33 @@
+// *************************************
+// Main footer
+// *************************************
+
+@import "../core/settings";
+@import "../core/helpers";
+
+.container {
+  clear: both;
+  padding: 45px 40px;
+}
+
+.content-title {
+  background-color: #f3f3f3;
+  margin: 0 0 20px 0;
+  padding: 20px;
+  font-size: 26px;
+}
+
+// Tablet and up
+// -------------
+@include breakpoint($break-mobile-and-up) {
+  .container {
+    width: 980px;
+    margin: 0 auto;
+    padding: 35px 40px;
+  }
+
+  .content-title {
+    padding: 10px;
+    font-size: 18px;
+  }
+}

@@ -21,6 +21,7 @@
 .header-menu { 
   @include breakpoint($break-mobile-small) {
     @include arrow-top(-24px, 80%, 25px, #3aafdc);
+    visibility: hidden;
   }
   z-index: 999;
   position: absolute;
@@ -78,6 +79,7 @@
 
   .header-menu {
     width: auto;
+    visibility: visibility;
     top: 40px;
     padding: 0 0;
     background-color: $white-color;
