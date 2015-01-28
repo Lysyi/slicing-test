@@ -26,6 +26,11 @@
 
 .main-slider-container {
   height: 400px;
+  li {
+    &:before {
+      display: none;
+    }
+  }
   img {
     z-index: 200;
     position: absolute;
@@ -60,17 +65,6 @@
   }
   p {
     display: none;
-  }
-  button {
-    margin: 20px 0 0 0;
-    padding: 15px 30px;
-    background-color: $normal-blue;
-    border: none;
-    color: #fff;
-    font-size: 19px;
-    &:hover {
-      background-color: $light-blue;
-    }
   }
 }
 
@@ -114,6 +108,7 @@
     li {
       &:before {
         @include add-rgba-background(rgba(0, 0, 0, .4));
+        display: block;
         position: absolute;
         z-index: 300;
         content: '';

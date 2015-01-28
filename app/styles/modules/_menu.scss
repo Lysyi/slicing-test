@@ -21,7 +21,6 @@
 .header-menu { 
   @include breakpoint($break-mobile-small) {
     @include arrow-top(-24px, 80%, 25px, #3aafdc);
-    visibility: hidden;
   }
   z-index: 999;
   position: absolute;
@@ -78,8 +77,8 @@
   }
 
   .header-menu {
+    display: block !important;
     width: auto;
-    visibility: visibility;
     top: 40px;
     padding: 0 0;
     background-color: $white-color;
@@ -101,6 +100,9 @@
       }
       &.open {
         @include arrow-bottom(6px, 90%, 4px, #6f6f6f);
+        &:hover {
+          @include arrow-bottom(6px, 90%, 4px, $light-blue);
+        }
       }
       &.active {
         @include arrow-bottom(6px, 90%, 4px, $light-blue);

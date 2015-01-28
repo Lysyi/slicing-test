@@ -1,11 +1,11 @@
 'use strict';
 
-$( '.header-menu-item .open' ).click(function(e) {
-  e.preventDefault();
+$( '.js-header-menu-item .js-open' ).click(function(e) {
+  // e.preventDefault();
   $(this).next().slideToggle();
 });
 
-$( '.header-menu-ico' ).click(function() {
+$( '.js-header-menu-ico' ).click(function() {
   $( '.js-header-menu' ).slideToggle();
 });
 
