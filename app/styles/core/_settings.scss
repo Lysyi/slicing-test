@@ -10,9 +10,9 @@ $fix-mqs: false !default;
 // Susy settings
 // -------------
 $susy: (
-  columns: 14,
-  gutters: 1,
-  debug: (image: show)
+  columns: 12,
+  gutters: 0,
+  // debug: (image: show)
 );
 
 

@@ -9,7 +9,7 @@
 
 
 .header {
-  // @include show-grid(8);
+  @include show-grid(12);
   height: 180px;
   overflow: hidden;
 }

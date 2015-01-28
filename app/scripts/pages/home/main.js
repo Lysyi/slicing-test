@@ -17,6 +17,7 @@ $('.js-main-slider').bxSlider({
 });
 
 $('.js-page-slider').bxSlider({
+  auto: true,
   responsive: true,
   controls: false,
   slideWidth: 290,

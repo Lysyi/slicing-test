@@ -7,14 +7,94 @@
 
 .container {
   clear: both;
-  padding: 45px 40px;
+  padding: 0 40px 45px 40px;
 }
 
 .content-title {
   background-color: #f3f3f3;
-  margin: 0 0 20px 0;
+  margin: 45px 0 20px 0;
   padding: 20px;
   font-size: 26px;
+  text-transform: capitalize;
+}
+
+button {
+  cursor: pointer;
+  margin: 20px 0 0 0;
+  padding: 15px 30px;
+  background-color: $normal-blue;
+  border: none;
+  color: #fff;
+  font-size: 19px;
+  text-transform: capitalize;
+  &:hover {
+    background-color: $light-blue;
+  }
+}
+
+// Future list
+// -------------
+
+.feature-list-item {
+  padding: 20px 0 20px 0;
+  font-size: 16px;
+  img {
+    float: left;
+    margin-top: 10px;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+
+.feature-list-content {
+  margin: 0 0 0 105px;
+  h3 {
+    color: $light-blue;
+  }
+}
+
+
+// News list
+// -------------
+
+.news-list-container {
+  i {
+    float: left;
+    width: 14px;
+    height: 12px;
+    margin: 5px 0 0 0;
+  }
+}
+
+.news-list {
+  padding-top: 20px;
+}
+
+.news-item {
+  clear: both;
+  padding: 0 0 30px 10px;
+  a {
+    display: block;
+    margin: 0 0 0 20px; 
+    font-size: 16px;
+    text-decoration: none;
+    &:hover {
+      color: $light-blue;
+      text-decoration: underline;
+    }
+  }
+}
+
+.more-news {
+  padding: 0 0 0 10px;
+  a {
+    margin: 0 0 0 10px; 
+    font-size: 18px;
+    color: $light-blue;
+    text-decoration: none;
+  }
 }
 
 // Tablet and up
@@ -23,11 +103,67 @@
   .container {
     width: 980px;
     margin: 0 auto;
-    padding: 35px 40px;
+    padding: 0 40px 35px 40px;
   }
 
   .content-title {
+    margin: 35px 0 20px 0;
     padding: 10px;
     font-size: 18px;
   }
+
+  button {
+    margin: 20px 0 0 0;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .feature-list-container {
+    @include span(8 of 12);
+  }
+
+  .news-list-container {
+    @include span(4 of 12);
+    padding: 0 0 0 20px;
+  }
+
+  .feature-list-item {
+    @include span(6 of 12);
+    padding: 10px 0 20px 0;
+    font-size: 12px;
+    button {
+      margin:  10px 0 0 0;
+      padding: 5px 15px;
+      font-size: 12px;
+    }
+  }
+
+  .feature-list-content {
+    h3 {
+      padding-bottom: 5px;
+      font-size: 16px;
+      color: $normal-blue;
+    }
+  }
+
+  .news-list {
+    padding-top: 5px;
+  }
+
+  .news-item {
+    padding: 0 0 10px 10px;
+    a {
+      margin: 0 0 0 20px; 
+      font-size: 12px;
+    }
+  }
+
+  .more-news {
+    padding: 20px 0 0 10px;
+    a {
+      font-size: 14px;
+      color: $normal-blue;
+    }
+  }
+
 }
